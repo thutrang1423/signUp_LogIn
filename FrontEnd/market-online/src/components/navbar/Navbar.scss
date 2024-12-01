@@ -1,0 +1,88 @@
+@import "../../responsive.scss";
+
+nav{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    
+    .left{
+        a{
+            transition: all 0.4s ease;
+            &:hover{
+                scale: 1.05;
+            }
+        }
+        flex:3;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .logo{
+            font-weight: bold;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap:10px;
+            img{
+                width: 39px;
+            }
+        }
+    }
+
+    .right{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        
+        .user{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+            }
+            span{
+                @include sm{
+                    display: none;
+                }
+            }
+            
+            .profile{
+                padding: 12px 24px;
+                background-color: rgb(188, 207, 201);
+                cursor: pointer;
+                border: none;
+                position: relative;
+
+                .notification{
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+                    background-color: red;
+                    color: white;
+                    border-radius: 50%;
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        a{
+            padding: 12px 24px;
+            margin: 20px;
+        }
+        .register{
+            background-color: rgb(174, 236, 215);
+        }
+    }
+}
