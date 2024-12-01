@@ -24,9 +24,9 @@ export default function Register() {
             const res = await apiRequest.post("/auth/register",{
                 username,email,password
             })
-            console.log(username,email,password);
-            
             navigate("/login")
+            
+            console.log(username,email,password);
             console.log(res.data);
         }catch(err){
             // console.log(err)
