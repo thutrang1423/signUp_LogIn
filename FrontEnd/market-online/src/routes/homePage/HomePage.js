@@ -6,7 +6,7 @@ export default function HomePage() {
   const {currentUser} = useContext(AuthContext)
   console.log(currentUser);
   
-  const data = ListData;
+  
 
   return (
     <div className="homePage">
