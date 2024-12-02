@@ -11,14 +11,17 @@ export default function ProfilePage() {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    try {
-      await apiRequest.post("/auth/logout");
-      updateUser(null);
-      navigate("/");
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  console.log("Logout button clicked");
+  try {
+    const response = await apiRequest.post("api/auth/logout");
+    console.log("Response:", response.data);
+    updateUser(null);
+    navigate("/");
+  } catch (err) {
+    console.error("Error during logout:", err);
+  }
+};
+
   return (
     <div className="profilePage">
       <div className="details">

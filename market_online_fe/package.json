@@ -1,5 +1,5 @@
 {
-  "name": "market-online",
+  "name": "market_online_fe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,13 +13,10 @@
     "react-router-dom": "^7.0.1",
     "react-scripts": "5.0.1",
     "sass": "^1.81.0",
-    "serve": "^14.2.4",
-    "server": "^1.0.41",
-    "sever": "^0.0.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -41,10 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
 }
