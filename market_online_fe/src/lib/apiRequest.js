@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiRequest = axios.create({
-    baseURL:"https://signup-loginbe-2.onrender.com",
+    baseURL:"https://user-account-management-3.onrender.com",
     withCredentials: true,
 });
 export default apiRequest;
